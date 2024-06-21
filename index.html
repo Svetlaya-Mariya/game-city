@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <title>City</title>
+</head>
+<body>
+    <main>
+        <section id="choose-player" class="choose-player">
+            <p class="choose-text">Выберите тип игры</p>
+            <button class="choose-btn" id="computer-game">С компьютером</button>
+            <button class="choose-btn" id="each-other-game">С другом</button>
+        </section>
+        <section id="game-section" class="game hidd">
+            <p id="letter" class="letter">Введите город</p>
+            <div class="players">
+                <div id="player1" class="game__player">
+                    <input type="text" id="name1-input" class="game__name-player hidd">
+                    <span id="player-name1" class="game__name-player">Игрок 1</span> 
+                    <div class="input-city">
+                        <input type="text" id="field1" class="field">
+                        <button id="play" class="game-btn">OK</button>
+                    </div>
+                </div>
+                <div id="player2" class="game__player hidd">
+                    <input type="text" id="name2-input" class="game__name-player hidd">
+                    <span id="player-name2" class="game__name-player">Игрок 2</span>
+                    <div class="input-city">
+                       <input type="text" id="field2" class="field" disabled>
+                        <button id="play" class="game-btn">OK</button>
+                    </div>
+                </div>
+                <div id="player-comp"  class="game__player player-comp">
+                    <span id="computer-city" class="computer-city game__name-player"></span>
+                </div>
+            </div>
+            <span id="mistake" class="mistake mistake-message"></span> <span id="message" class="mistake-message"></span>
+            <div class="buttons">
+                <!--<button id="play" class="game-btn">Проверить</button>-->
+                <button id="restart" class="restart hidd">Заново</button>
+                <button id="return" class="restart hidd">Тип игры</button>
+            </div>
+            
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
